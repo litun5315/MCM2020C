@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TSCXML
+	xmlns="http://www.ibm.com/software/analytics/spss/xml/components/time-series"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/components/time-series www.ibm.com/software/analytics/spss/xml/components/time-series-1.0.xsd">
+	<Header>
+		<Application
+			name="IBM SPSS Statistics"
+			version="24.0.0.0"/>
+	</Header>
+	<DataDictionary>
+		<DateSpecification
+			dateSpecID="1"
+			dateSpecDescriptor="Date specification derived from Statistics time-series date variables">
+			<Periods>
+				<Year
+					firstCaseIndex="2011"/>
+				<Month
+					cycleLength="12"
+					firstCaseIndex="0"/>
+			</Periods>
+		</DateSpecification>
+	</DataDictionary>
+	<ExpSmoothingModel
+		modelName="模型_1"
+		modelDescriptor="V2_AWinters"
+		variableID="V2"
+		dateSpecID="1">
+		<ESAdditiveWinters
+			seasonLength="12">
+			<ParmLevel>
+				<EstimatedParameter>0.080929030935612 0.123854958764743</EstimatedParameter>
+			</ParmLevel>
+			<ParmTrend>
+				<EstimatedParameter>1.17976465784971e-007 0.0364862527534122</EstimatedParameter>
+			</ParmTrend>
+			<ParmSeason>
+				<EstimatedParameter>6.54883067792785e-006 0.165271095827901</EstimatedParameter>
+			</ParmSeason>
+			<StateLevel>0.642164634291416</StateLevel>
+			<StateTrend>0.00317183787500586</StateTrend>
+			<StateSeason
+				phase="8">0.0267680935296267 -0.0415715587849964 -0.00801475233944818 0.0567318199200306 -0.00241602324409789 -0.0532365769584619 -0.0206273616308196 0.0100761964446294 0.0110547721610617 0.060412010108614 -0.0269757657233855 -0.012202968885581</StateSeason>
+		</ESAdditiveWinters>
+		<EstimationInfo
+			periodStartIndex="0"
+			periodLength="44"
+			degreesOfFreedom="41">
+			<Statistic
+				type="errVariance">0.00381020489330267</Statistic>
+			<Statistic
+				type="meanSqrErr">0.00381020489330267</Statistic>
+			<Statistic
+				type="rootMeanSqrErr">0.0617268571474579</Statistic>
+			<Statistic
+				type="meanAbsPctErr">7.54224115546702</Statistic>
+			<Statistic
+				type="meanAbsErr">0.041871932729512</Statistic>
+			<Statistic
+				type="maxAbsPctErr">28.7128219430005</Statistic>
+			<Statistic
+				type="maxAbsErr">0.220830430928205</Statistic>
+			<Statistic
+				type="rSqr">0.405200646044287</Statistic>
+			<Statistic
+				type="normBayesIC">-5.31205938393444</Statistic>
+			<Statistic
+				type="logLikelihood">61.6618819151363</Statistic>
+			<Statistic
+				type="akaikeIC">-117.323763830273</Statistic>
+			<Statistic
+				type="bayesIC">-111.971194928518</Statistic>
+			<Statistic
+				type="stationaryRSqr">0.843783189164629</Statistic>
+			<LjungBoxStatistic
+				k="18"
+				degreesOfFreedom="15"
+				pValue="0.696933646738881">11.7621807217675</LjungBoxStatistic>
+		</EstimationInfo>
+	</ExpSmoothingModel>
+</TSCXML>
