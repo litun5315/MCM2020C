@@ -1,6 +1,6 @@
 # README
 
-Our solution of ** PROBLEM C** in **MCM2020** is released in this repository.
+Our solution of **PROBLEM C** in **MCM2020** is released in this repository.
 
 ## Thanks
 
